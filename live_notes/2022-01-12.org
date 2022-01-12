@@ -1,0 +1,55 @@
+* CSE 545
+
+** GitHub Repo: https://github.com/ConnorNelson/CSE-545-S22/
+
+** Grades
+
+- 10% Midterm
+- 10% Final
+- 30% PCTF
+- 50% Assignments
+
+** PCTF: Project CTF
+
+*** Jeopardy CTF
+
+*** Attack Defense CTF
+
+- 200 rounds, each 3 minutes
+- Running vulnerable services on some machine
+- Example: Mail server, running on some port
+  - username: login to mail server (flag identifier)
+  - password: login to mail server (flag)
+- Game tells you about opponents (IP address), services (ports), and round flag identifier
+- You manage your services, you can patch them
+- Points: attack/defense/availability
+
+- Example useful PCTF projects
+  - automation for launching a bunch of exploits against a bunch of machines every 3 minutes, and auto-submitting flags
+
+- Is DDOS allowed?
+ - No for flooding with traffic
+ - Yes when targetting service functionality (wipe all flags)
+
+- Services - fairly small program (think <500LOC)
+- 3-4 services
+- C program (random tcp program), Python Program, PHP Program (web)
+- All services run the entire game
+
+- Flags are specific to (round, service, opponent id, attack id)
+
+- 24 hours (you are expected to compete for 8 hours)
+- 5:00pm MST
+
+** Links
+
+- https://ctftime.org
+- https://pwn.college
+- https://dojo.pwn.college
+- https://github.com/shellphish/ictf-framework
+
+*** Binary Hacking Asssignment and Web Hacking Assignment
+
+- Servers will be created in the next week
+
+*** TA Live Event Mondays 3:00pm-4:00pm MST
