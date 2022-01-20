@@ -1,0 +1,23 @@
+* Binary Hacking Assignment
+
+Create an account with:
+~curl cse545-binary.pwn.college/account/create/<USERNAME>/$(openssl passwd)~
+
+* PCTF
+
+- Friday February 18 @ 6:00pm MST, goes for 24 hours
+- Individually participate for at least 8 hours
+
+* Debugging
+
+~gcc -Wall -Werror -g -fsanitize=address -fsanitize=leak -o normal_web_server normal_web_server.c~
+
+* PCTF
+- 3-4 services running on
+their own port
+- These programs are <500 LOC
+- Vulnerability in these programs
+- Several rounds where you attempt to get the flag from the service
+- Flag: FLG12345678
+
+- Attack Defense Availability
