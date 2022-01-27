@@ -1,0 +1,31 @@
+
+
+* Web Hacking Assignment
+
+Create an account with:
+~curl cse545-web.pwn.college/account/create/<USERNAME>/$(openssl passwd)~
+
+* Reflector Assignment
+
+Attacker   10.0.0.1 AA:AA:AA:AA:AA:AA
+Victim     10.0.0.3 BB:BB:BB:BB:BB:BB
+Reflector  10.0.0.4 CC:CC:CC:CC:CC:CC
+
+Attacker --CONNECT--> Victim
+
+`nc 10.0.0.3 4242`
+
+Naturally: Attacker says who-has 10.0.0.3
+Script does:  10.0.0.3 is-at BB:BB:BB:BB:BB:BB
+
+Naturally:   Attacker --SYN--> Victim
+Script does: Reflector --SYN--> Attacker
+
+Naturally: Attacker says who-has 10.0.0.4
+Script does:  10.0.0.4 is-at CC:CC:CC:CC:CC:CC
+
+Naturally: Attacker --SYN-ACK--> Reflector
+Script:    Victim --SYN-ACK--> Attacker
+
+Naturally: Attacker --ACK--> Victim
+Script:    Reflector --ACK--> Attacker
